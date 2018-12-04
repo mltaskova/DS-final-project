@@ -38,18 +38,18 @@ def main():
 
     print(address_list)
 
-    beb = BestEffortBroadcast(process_id=int(port), process_id_list=address_list, addr_str=addr)
+
+    def chat_deliver(mesg):
+        print("Chat delivering")
+        if mesg is not None:
+            print("Message: ", mesg)
+            sender_id, message = mesg
+            if message:
+                print("Delivery from {} : {}".format(sender_id, message))
+
+    beb = BestEffortBroadcast(process_id=int(port), process_id_list=address_list, addr_str=addr, arg_callback = chat_deliver)
 
     while True:
-        while True:
-            mesg = beb.deliver()
-            if mesg is not None:
-                sender_id, message = mesg
-                if message:
-                    print("Delivery from {} : {}".format(sender_id, message))
-            else:
-                break
-
         message = input("type a message, q(quit) or enter (continue) -> ")
         if message is 'q':
             break

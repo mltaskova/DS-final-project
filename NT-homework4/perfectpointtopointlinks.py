@@ -1,13 +1,17 @@
 import socket
+import threading
 
 class PerfectPointToPointLinks:
-    def __init__(self, port, addr_str):
+    def __init__(self, port, addr_str, arg_callback):
+        self.deliver_callback = arg_callback
         self.port = port
         self.address = addr_str
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server_socket.bind((self.address, int(self.port)))
         self.server_socket.listen(4)
         self.deliver_list = []
+        threading.Thread(target=self.deliver, args=()).start()
+
 
     def send(self, recipient_process_port, addr_str, message):
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -22,16 +26,7 @@ class PerfectPointToPointLinks:
 
     def deliver(self):
         while True:
-            try:
-                self.server_socket.setblocking(0)
-            except BlockingIOError:
-                self.server_socket.close()
-                return
-            try:
-                (connection, address) = self.server_socket.accept()
-            except BlockingIOError:
-                return
-            connection.setblocking(0)
+            (connection, address) = self.server_socket.accept()
             buf = connection.recv(2048)
             message = None
             if buf:
@@ -39,7 +34,7 @@ class PerfectPointToPointLinks:
                 recipient_port = message.split("+")[0]
                 message = message.split("+")[1]
             connection.close()
-            return (recipient_port, message)
+            self.deliver_callback(recipient_port, message)
 
 
     def close(self):
