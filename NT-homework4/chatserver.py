@@ -23,7 +23,7 @@ class ChatServer:
             client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             try:
                 client_socket.connect((self.ADDRESS, int(port)))
-            except ConnectionRefusedError:
+            except socket.error:
                 print("Cannot connect to {}.".format(self.clients.get(port)))
                 continue
             client_socket.send(message.encode())

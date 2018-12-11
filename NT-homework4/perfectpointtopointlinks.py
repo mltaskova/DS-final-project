@@ -18,7 +18,7 @@ class PerfectPointToPointLinks:
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         try:
             client_socket.connect((addr_str, int(recipient_process_port)))
-        except ConnectionRefusedError:
+        except socket.error:
             print("Friend {} has not joined.".format(recipient_process_port))
         mesg = str(self.port) + "+" + message
         client_socket.send(mesg.encode())

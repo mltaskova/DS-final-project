@@ -53,7 +53,7 @@ class ChatBox:
 
 
 def main():
-    name = input("Your name: ")
+    name = raw_input("Your name: ")
     addr = '127.0.0.1'
     try:
         # Choose a random port for each client
@@ -69,7 +69,7 @@ def main():
     try:
         # Connecting to chat server
         client_socket.connect(("127.0.0.1", 11000))
-    except ConnectionRefusedError:
+    except socket.error:
         print("Cannot connect to chat server.")
         return
     mesg = str(port) + "+" + "New client:" + name
@@ -79,16 +79,16 @@ def main():
     # Sending messages
     print("## Type a message or {quit} to quit ##")
     while True:
-        message = input("")
+        message = raw_input("")
         # If quit, send quit message to chat server
         if message == '{quit}':
             client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             try:
                 # Connecting to chat server
                 client_socket.connect(("", 11000))
-            except ConnectionRefusedError:
+            except socket.error:
                 print("Cannot connect to chat server.")
-                return
+                continue
             msg = str(chat_box.port) + "+" + message
             client_socket.send(msg.encode())
             client_socket.close()
