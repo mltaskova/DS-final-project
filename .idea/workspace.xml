@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ec7890-5f4f-4d18-acb2-1df7769d3ac7" name="Default Changelist" comment="testing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NT-homework4/chatbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/NT-homework4/chatbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NT-homework4/chatserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/NT-homework4/chatserver.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,12 +85,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="8" />
+          <entry key="py" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="8" />
+          <entry key="Python" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -106,13 +107,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NT-homework4/chatbox.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="51" />
+            <state relative-caret-position="315">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
-                <element signature="e#13#74#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NT-homework4/chatserver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,7 +134,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/virus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
+            <state relative-caret-position="380">
               <caret line="35" column="44" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="44" />
             </state>
           </provider>
@@ -130,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/venv/virus_server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state relative-caret-position="74">
+              <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
               <folding>
                 <element signature="e#13#74#0" expanded="true" />
               </folding>
@@ -189,11 +202,11 @@
         <option value="$PROJECT_DIR$/venv/vulnerable_client.py" />
         <option value="$PROJECT_DIR$/venv/infectedchatbox_testing.py" />
         <option value="$PROJECT_DIR$/NT-homework4/infectedchatbox_testing.py" />
-        <option value="$PROJECT_DIR$/NT-homework4/chatserver.py" />
         <option value="$PROJECT_DIR$/NT-homework4/perfectpointtopointlinks.py" />
         <option value="$PROJECT_DIR$/venv/virus.py" />
         <option value="$PROJECT_DIR$/venv/virus_server.py" />
         <option value="$PROJECT_DIR$/NT-homework4/chatbox.py" />
+        <option value="$PROJECT_DIR$/NT-homework4/chatserver.py" />
       </list>
     </option>
   </component>
@@ -393,15 +406,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="23" width="1283" height="819" extended-state="0" />
+    <frame x="63" y="23" width="1283" height="819" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16006339" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16006339" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3287483" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39889959" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -427,16 +440,6 @@
     <entry file="file://$PROJECT_DIR$/venv/vulnerable_client.py" />
     <entry file="file://$PROJECT_DIR$/venv/vulnerable_program.py" />
     <entry file="file://$PROJECT_DIR$/NT-homework4/infectedchatbox_testing.py" />
-    <entry file="file://$PROJECT_DIR$/NT-homework4/chatserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NT-homework4/perfectpointtopointlinks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -450,29 +453,39 @@
     <entry file="file://$PROJECT_DIR$/NT-homework4/besteffortbroadcast.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/virus.py">
+    <entry file="file://$PROJECT_DIR$/NT-homework4/chatbox.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="44" />
+        <state relative-caret-position="315">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/virus_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="38" column="13" lean-forward="true" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state relative-caret-position="74">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
           <folding>
             <element signature="e#13#74#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NT-homework4/chatbox.py">
+    <entry file="file://$PROJECT_DIR$/venv/virus.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="51" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="51" />
+        <state relative-caret-position="380">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NT-homework4/chatserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
           <folding>
-            <element signature="e#13#74#0" expanded="true" />
+            <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
