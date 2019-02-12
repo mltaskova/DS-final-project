@@ -6,6 +6,7 @@ In efforts of improving the chat assignment from class we created the chatbox, w
 - instant messaging (in the sense that there are no delays in delivering thanks to asynchronous p2plinks)
 - connection to a chat server that keeps a list of the participants
 - instant updates on any changes to participant list ("instant" again in the above meaning)
+
 These improvements are work of Natalie!
 
 ## The Virus
