@@ -17,3 +17,10 @@ In efforts to explore the vulnerability of our chatbox we created a virus that o
 - once a new infected chatbox client is made messages that have some common keywords (such as question words, do/go/hi, etc) will be altered to say something rather triggering (for the purposes of the project demo we picked to surprise with some social, political, economical awareness questions and thoughts)
 - the message alterings are not visible to the participants of either the healthy or the infected side of the system 
 
+## How to run
+Everything needs to be run locally (preferably using an IDE like intelliJ)
+- first run the chat server so it can start keeping track of participants
+- then you can run the chatbox for as many members as you want following the prompt instructions
+- after playing around with the features of the chat you can run the virus
+- then create one more chatbox client following the prompts as before
+- try the chat features again using the infected chat member
